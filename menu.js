@@ -32,7 +32,15 @@
 
 //CODE HERE
 
+let pizza = {
+    name: 'NYC',
+    price: 1,
+    catagory: "cheap",
+    popularity: 100,
+    rating: 5,
+    tags: [1, 2, 3]
 
+}
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -44,6 +52,8 @@
 
 //CODE HERE
 
+let pPopular = pizza.popularity
+// console.log(pPopular)
 
 /*
     Second, log the second tag in your pizza's
@@ -54,6 +64,8 @@
 
 //CODE HERE
 
+let pTag = pizza.tags[1]
+// console.log(pTag)
 
 /*
     Third, destructure the price off of the
@@ -64,6 +76,9 @@
 
 //CODE HERE
 
+const {price} = {price: 3}
+
+// console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -74,6 +89,8 @@
 
 //CODE HERE
 
+const {catagory} = {catagory: "delicous"}
+// console.log(catagory)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,6 +105,15 @@
 */
 
 //CODE HERE
+
+let foodArr = [
+    {name: 'NY'},
+    {price: 2},
+    {catagory: "cheese"},
+    {popularity: 10},
+    {rating: 4},
+    {tags: [2, 3, 4]}
+]
 
 
 
@@ -105,9 +131,9 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter((element) => element.rating)
 
-
+// console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
