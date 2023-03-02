@@ -27,7 +27,7 @@ const greetUser = username => {
     return `Welcome back, ${username}`
 }
 
-// console.log(greetUser('Andrew'))
+console.log(greetUser('Andrew'))
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -52,19 +52,16 @@ const greetUser = username => {
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-
-function canWeDeliver(zipCode) {
-    for( let i = 0; i < deliveryAreaZipCodes.length; i++){
-        if(zipCode[i] <= 85213 && zipCode[i] >= 85203 ){
-            console.log(`You're in our delivery zone!`)
-        }else{
-            console.log(`Sorry we can't deliver to that address`)
-        }
-        
+function canWeDeliver(zipCode){
+    if(deliveryAreaZipCodes.includes(zipCode)){
+        return `You're in our delivery zone!`
+    }else{
+        return `Sorry, we can't deliver to that address`
     }
+
 }
 
-canWeDeliver(85205)
+console.log(canWeDeliver(85205))
 
 /* 
     Problem 2 Continued
@@ -85,7 +82,7 @@ canWeDeliver(85205)
 
 // CODE HERE
 
-function canWeDeliverTwo()
+
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -100,16 +97,6 @@ function canWeDeliverTwo()
     Read on for more instructions.
 */
 
-const deals = [
-    {
-        title: '15% Off!', 
-        desc: 'Applied to your entire order when you spend $30 or more'
-    }, 
-    {
-        title: 'Free Kids Meal with 2 Regular Entrees', 
-        desc: '   This deal lasts until the end of March! '
-    }
-]
 
 /*
     The owner has decided to take the 15% off

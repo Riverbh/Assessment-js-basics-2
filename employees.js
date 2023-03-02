@@ -72,8 +72,8 @@ empOne.getSchedule()
 
 //CODE HERE
 
-const empTwo = {...empOne, name: 'Kevin'}
-// console.log(empTwo)
+const Nick = {...empOne, name: 'Kevin'}
+console.log(Nick)
 
 
 //////////////////PROBLEM 2////////////////////
