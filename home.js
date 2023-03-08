@@ -83,7 +83,17 @@ console.log(canWeDeliver(85205))
 // CODE HERE
 
 
+function canWeDeliverTwo(zipCode) {
+    for(let i = 0; i < deliveryAreaZipCodes.length; i++)
+    if(zipCode[i] += deliveryAreaZipCodes){
+        return `You're in our delivery zone!`
+    }else{
+        return `Sorry, we can't deliver to that address`
+    }
+}
 
+console.log(canWeDeliver(85203))
+ 
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
