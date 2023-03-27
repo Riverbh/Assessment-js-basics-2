@@ -127,10 +127,10 @@ const deals = [
 
 //CODE HERE
 
-const newDiscount = deals.map(function(title){ return title.replace('15', '10') })
+// const newDiscount = deals.map(function(title){ return title.replace('15', '10') })
 
-
-
+const newDiscount = deals.replace('15', '10')
+console.log(newDiscount)
 
 /*
     The restaurant is going to continue its
