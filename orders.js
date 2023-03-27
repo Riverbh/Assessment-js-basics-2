@@ -32,11 +32,11 @@
 //CODE HERE
 
 class Ticket{
-    constructor(items, orderTime, customerId,){
+    constructor(items, orderTime, customerId, queued){
         this.items = items
         this.orderTime = orderTime
         this.customerId  = customerId
-        this.status = queued
+        this.status = queued 
     }
         updateStatus(newStatus){
             this.status = (this.status = newStatus)
@@ -60,6 +60,9 @@ class Ticket{
 
 //CODE HERE
 
+const firstTicket = new Ticket('pizza, bread, and soda', '7:03 PM', 575)
+
+console.log(firstTicket)
 
 /*
     Call the `updateStatus` method on
@@ -68,3 +71,5 @@ class Ticket{
 */
 
 //CODE HERE
+
+firstTicket.updateStatus("up next")
