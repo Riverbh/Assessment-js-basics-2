@@ -76,7 +76,7 @@ let pTag = pizza.tags[1]
 
 //CODE HERE
 
-const {price} = pizza
+let {price} = pizza
 
 price = 3
 
@@ -91,7 +91,7 @@ price = 3
 
 //CODE HERE
 
-const {catagory} = pizza
+let {catagory} = pizza
 
 catagory = 'gourme'
 
@@ -111,7 +111,7 @@ catagory = 'gourme'
 
 //CODE HERE
 
-let foodArr = {name: "Deep Dish" , price: 12 , catagory: 'gourme' , popularity: 75, rating: 4}
+const foodArr = {name: "Deep Dish" , price: 12 , catagory: 'gourme' , popularity: 75, rating: 4}
 
 
 
@@ -129,9 +129,9 @@ let foodArr = {name: "Deep Dish" , price: 12 , catagory: 'gourme' , popularity: 
 
 //CODE HERE
 
-const filteredFood = foodArr.filter((element) => element.rating > 3)
+const foodObj = foodArr.filter(price => price >= 1)
 
-console.log(filteredFood)
+console.log(foodObj)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -174,19 +174,19 @@ console.log(filteredFood)
 
 //CODE HERE
 
-function filterByProperty (property, number, type) {
-    let filterArr = []
-    let property = foodArr.name
-    let number =foodArr.rating
-    let type = foodArr.price
-    foodArr.filter((type) => {
-        if(type > foodArr.price ){
-            return foodArr === type
-        }else if(type < foodArr.price){
-            return foodarr !== type
-        }
-    })
-}
+// function filterByProperty (property, number, type) {
+//     let filterArr = []
+//     let property = foodArr.name
+//     let number =foodArr.rating
+//     let type = foodArr.price
+//     foodArr.filter((type) => {
+//         if(type > foodArr.price ){
+//             return foodArr === type
+//         }else if(type < foodArr.price){
+//             return foodarr !== type
+//         }
+//     })
+// }
 
 /*
     Invoke the `filterByProperty` function passing
