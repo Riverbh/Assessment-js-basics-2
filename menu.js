@@ -110,8 +110,36 @@ catagory = 'gourme'
 */
 
 //CODE HERE
+const foodArr = [{name: "Deep Dish" , 
+price: 12 , 
+catagory: 'gourme' , 
+popularity: 75, 
+rating: 4},
 
-const foodArr = {name: "Deep Dish" , price: 12 , catagory: 'gourme' , popularity: 75, rating: 4}
+{name: 'New York',
+price: 3,
+catagory: 'cheap',
+popularity: 100,
+rating: 5},
+
+{name: 'Pi',
+price: 10,
+catagory: 'gourme',
+popularity: 95,
+rating: 5},
+
+{name: 'Dominios',
+price: 8,
+catagory: 'meh',
+popularity: 50,
+rating: 3},
+
+{name: 'Little Ceasers',
+price: 5,
+catagory: 'gross',
+popularity: 25,
+rating: 2},
+]
 
 
 
@@ -129,9 +157,11 @@ const foodArr = {name: "Deep Dish" , price: 12 , catagory: 'gourme' , popularity
 
 //CODE HERE
 
-const foodObj = foodArr.filter(price => price >= 1)
+let cheapFood = foodArr.filter(function(el) {
+    return el.price > 5
+})
 
-console.log(foodObj)
+console.log(cheapFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
