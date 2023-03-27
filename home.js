@@ -106,8 +106,16 @@ console.log(canWeDeliver(85203))
 
     Read on for more instructions.
 */
-
-
+const deals = [
+    {
+        title: '15% Off!', 
+        desc: 'Applied to your entire order when you spend $30 or more'
+    }, 
+    {
+        title: 'Free Kids Meal with 2 Regular Entrees', 
+        desc: '   This deal lasts until the end of March! '
+    }
+]
 /*
     The owner has decided to take the 15% off
     deal down to 10%.
@@ -119,6 +127,7 @@ console.log(canWeDeliver(85203))
 
 //CODE HERE
 
+const newDiscount = deals.map(function(title){ return title.replace('15', '10') })
 
 
 
@@ -137,3 +146,6 @@ console.log(canWeDeliver(85203))
 */
 
 //CODE HERE
+
+const newDate = deals.map(function(desc){ return desc.replace('March', 'April') })
+
