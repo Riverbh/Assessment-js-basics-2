@@ -76,7 +76,9 @@ let pTag = pizza.tags[1]
 
 //CODE HERE
 
-const {price} = {price: 3}
+const {price} = pizza
+
+price = 3
 
 // console.log(price)
 
@@ -89,7 +91,10 @@ const {price} = {price: 3}
 
 //CODE HERE
 
-const {catagory} = {catagory: "delicous"}
+const {catagory} = pizza
+
+catagory = 'gourme'
+
 // console.log(catagory)
 
 //////////////////PROBLEM 3////////////////////
@@ -106,14 +111,7 @@ const {catagory} = {catagory: "delicous"}
 
 //CODE HERE
 
-let foodArr = [
-    {name: 'NY'},
-    {price: 2},
-    {catagory: "cheese"},
-    {popularity: 10},
-    {rating: 4},
-    {tags: [2, 3, 4]}
-]
+let foodArr = {name: "Deep Dish" , price: 12 , catagory: 'gourme' , popularity: 75, rating: 4}
 
 
 
@@ -131,9 +129,9 @@ let foodArr = [
 
 //CODE HERE
 
-const filteredFood = foodArr.filter((element) => element.rating)
+const filteredFood = foodArr.filter((element) => element.rating > 3)
 
-// console.log(filteredFood)
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -176,6 +174,19 @@ const filteredFood = foodArr.filter((element) => element.rating)
 
 //CODE HERE
 
+function filterByProperty (property, number, type) {
+    let filterArr = []
+    let property = foodArr.name
+    let number =foodArr.rating
+    let type = foodArr.price
+    foodArr.filter((type) => {
+        if(type > foodArr.price ){
+            return foodArr === type
+        }else if(type < foodArr.price){
+            return foodarr !== type
+        }
+    })
+}
 
 /*
     Invoke the `filterByProperty` function passing
